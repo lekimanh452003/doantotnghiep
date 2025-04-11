@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #0ea5e9;
+  --primary-dark: #0369a1;
+  --secondary: #64748b;
+  --secondary-dark: #334155;
+  --success: #22c55e;
+  --success-dark: #15803d;
+  --danger: #ef4444;
+  --danger-dark: #b91c1c;
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 transition-all duration-200 ease-in-out;
+  }
+
+  .btn-primary {
+    @apply bg-primary-600 text-white border border-transparent hover:bg-primary-700 focus:ring-primary-500;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary-600 text-white border border-transparent hover:bg-secondary-700 focus:ring-secondary-500;
+  }
+
+  .btn-success {
+    @apply bg-success-600 text-white border border-transparent hover:bg-success-700 focus:ring-success-500;
+  }
+
+  .btn-danger {
+    @apply bg-danger-600 text-white border border-transparent hover:bg-danger-700 focus:ring-danger-500;
+  }
+
+  .btn-outline {
+    @apply bg-white border-2;
+  }
+
+  .btn-outline-primary {
+    @apply border-primary-600 text-primary-600 hover:bg-primary-50 focus:ring-primary-500;
+  }
+
+  .btn-outline-secondary {
+    @apply border-secondary-600 text-secondary-600 hover:bg-secondary-50 focus:ring-secondary-500;
+  }
+
+  .btn-outline-success {
+    @apply border-success-600 text-success-600 hover:bg-success-50 focus:ring-success-500;
+  }
+
+  .btn-outline-danger {
+    @apply border-danger-600 text-danger-600 hover:bg-danger-50 focus:ring-danger-500;
+  }
+
+  .input {
+    @apply mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm;
+  }
+
+  .label {
+    @apply block text-sm font-medium text-gray-700;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-200;
+  }
+}
