@@ -14,6 +14,7 @@ namespace EduSync.DTOs
         public DateTime EndTime { get; set; }
         public int Duration { get; set; }
         public int ClassId { get; set; }
+        public int MaxScore { get; set; }
         public List<QuestionDto> Questions { get; set; }
     }
 
@@ -62,6 +63,7 @@ namespace EduSync.DTOs
         public double Points { get; set; }
 
         public List<CreateOptionDto> Options { get; set; }
+        public bool ShouldSerializeOptions() => Type == 0;
     }
 
     public class OptionDto
@@ -92,6 +94,7 @@ namespace EduSync.DTOs
     public class SubmitAnswerDto
     {
         [Required]
+        public int AnswerId { get; set; }
         public int QuestionId { get; set; }
 
         public string? Content { get; set; }

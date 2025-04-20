@@ -76,10 +76,46 @@ namespace EduSync.Services
 
             return responseObject?.Choices?.FirstOrDefault()?.Message?.Content ?? "No response received.";
         }
+        public async Task<string> GetAssistantResponseAsync(string userMessage)
+        {
+            var requestBody = new
+            {
+                model = "gpt-3.5-turbo",
+                messages = new[]
+                {
+            new { role = "system", content = "You are a friendly and knowledgeable AI assistant. Answer questions clearly and helpfully." },
+            new { role = "user", content = userMessage }
+        },
+                temperature = 0.7,
+                max_tokens = 1000
+            };
+
+            var response = await _httpClient.PostAsync(
+                API_URL,
+                new StringContent(JsonSerializer.Serialize(requestBody), Encoding.UTF8, "application/json")
+            );
+
+            response.EnsureSuccessStatusCode();
+            var responseContent = await response.Content.ReadAsStringAsync();
+
+           
+
+            var options = new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true
+            };
+
+            var responseObject = JsonSerializer.Deserialize<ChatGPTResponse>(responseContent, options);
+
+            // Nếu có nội dung trong Choices, trả về nội dung của Message
+            return responseObject?.Choices?.FirstOrDefault()?.Message?.Content ?? "No response received.";
+        }
 
         private class ChatGPTResponse
         {
             public List<Choice> Choices { get; set; }
+            public string Model { get; set; }
+
         }
 
         private class Choice

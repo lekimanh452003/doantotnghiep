@@ -296,15 +296,15 @@
   },
   {
     "ContainingType": "EduSync.Controllers.ChatbotController",
-    "Method": "SendMessage",
-    "RelativePath": "api/Chatbot/send-message",
+    "Method": "ChatWithAssistant",
+    "RelativePath": "api/Chatbot/chat",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "request",
-        "Type": "EduSync.Controllers.MessageRequest",
+        "Type": "EduSync.DTOs.ChatbotDTO",
         "IsRequired": true
       }
     ],

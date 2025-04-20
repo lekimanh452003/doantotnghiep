@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bvoPdP8lFV4=",
+  "dgSpecHash": "xt25y/7wgIs=",
   "success": true,
-  "projectFilePath": "C:\\Users\\kiman\\OneDrive\\Máy tính\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\EduSync.csproj",
+  "projectFilePath": "C:\\Users\\kiman\\OneDrive\\Máy tính\\English\\backend\\EduSync\\EduSync.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kiman\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\kiman\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

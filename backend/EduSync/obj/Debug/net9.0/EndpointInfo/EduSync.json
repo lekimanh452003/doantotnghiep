@@ -543,7 +543,7 @@
         }
       }
     },
-    "/api/Chatbot/send-message": {
+    "/api/Chatbot/chat": {
       "post": {
         "tags": [
           "Chatbot"
@@ -552,17 +552,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/MessageRequest"
+                "$ref": "#/components/schemas/ChatbotDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/MessageRequest"
+                "$ref": "#/components/schemas/ChatbotDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/MessageRequest"
+                "$ref": "#/components/schemas/ChatbotDTO"
               }
             }
           }
@@ -3382,6 +3382,16 @@
         },
         "additionalProperties": false
       },
+      "ChatbotDTO": {
+        "type": "object",
+        "properties": {
+          "question": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "Class": {
         "required": [
           "classCode",
@@ -4146,6 +4156,10 @@
             "type": "integer",
             "format": "int32"
           },
+          "maxScore": {
+            "type": "integer",
+            "format": "int32"
+          },
           "questions": {
             "type": "array",
             "items": {
@@ -4464,16 +4478,6 @@
           },
           "isPresent": {
             "type": "boolean"
-          }
-        },
-        "additionalProperties": false
-      },
-      "MessageRequest": {
-        "type": "object",
-        "properties": {
-          "message": {
-            "type": "string",
-            "nullable": true
           }
         },
         "additionalProperties": false
@@ -4932,10 +4936,14 @@
       },
       "SubmitAnswerDto": {
         "required": [
-          "questionId"
+          "answerId"
         ],
         "type": "object",
         "properties": {
+          "answerId": {
+            "type": "integer",
+            "format": "int32"
+          },
           "questionId": {
             "type": "integer",
             "format": "int32"

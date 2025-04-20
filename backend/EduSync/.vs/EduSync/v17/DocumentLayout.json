@@ -1,154 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\",
+  "WorkspaceRootPath": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\English\\backend\\EduSync\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|c:\\users\\kiman\\onedrive\\m\u00E1y t\u00EDnh\\elearning english\\hoctatructuyen\\v13\\edusync\\backend\\edusync\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|solutionrelative:services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|c:\\users\\kiman\\onedrive\\m\u00E1y t\u00EDnh\\english\\backend\\edusync\\services\\chatgptservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|solutionrelative:services\\chatgptservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|c:\\users\\kiman\\onedrive\\m\u00E1y t\u00EDnh\\elearning english\\hoctatructuyen\\v13\\edusync\\backend\\edusync\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|c:\\users\\kiman\\onedrive\\m\u00E1y t\u00EDnh\\elearning english\\hoctatructuyen\\v13\\edusync\\backend\\edusync\\dtos\\authdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|solutionrelative:dtos\\authdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|c:\\users\\kiman\\onedrive\\m\u00E1y t\u00EDnh\\elearning english\\hoctatructuyen\\v13\\edusync\\backend\\edusync\\controllers\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|solutionrelative:controllers\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|c:\\users\\kiman\\onedrive\\m\u00E1y t\u00EDnh\\elearning english\\hoctatructuyen\\v13\\edusync\\backend\\edusync\\models\\exam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|solutionrelative:models\\exam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|c:\\users\\kiman\\onedrive\\m\u00E1y t\u00EDnh\\elearning english\\hoctatructuyen\\v13\\edusync\\backend\\edusync\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|c:\\users\\kiman\\onedrive\\m\u00E1y t\u00EDnh\\elearning english\\hoctatructuyen\\v13\\edusync\\backend\\edusync\\models\\discussion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|solutionrelative:models\\discussion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|c:\\users\\kiman\\onedrive\\m\u00E1y t\u00EDnh\\elearning english\\hoctatructuyen\\v13\\edusync\\backend\\edusync\\models\\assignmentsubmission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|solutionrelative:models\\assignmentsubmission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|c:\\users\\kiman\\onedrive\\m\u00E1y t\u00EDnh\\elearning english\\hoctatructuyen\\v13\\edusync\\backend\\edusync\\models\\resource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|solutionrelative:models\\resource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|c:\\users\\kiman\\onedrive\\m\u00E1y t\u00EDnh\\elearning english\\hoctatructuyen\\v13\\edusync\\backend\\edusync\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|c:\\users\\kiman\\onedrive\\m\u00E1y t\u00EDnh\\elearning english\\hoctatructuyen\\v13\\edusync\\backend\\edusync\\models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|solutionrelative:models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|c:\\users\\kiman\\onedrive\\m\u00E1y t\u00EDnh\\elearning english\\hoctatructuyen\\v13\\edusync\\backend\\edusync\\models\\attendance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|solutionrelative:models\\attendance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|c:\\users\\kiman\\onedrive\\m\u00E1y t\u00EDnh\\elearning english\\hoctatructuyen\\v13\\edusync\\backend\\edusync\\models\\lesson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|solutionrelative:models\\lesson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|c:\\users\\kiman\\onedrive\\m\u00E1y t\u00EDnh\\elearning english\\hoctatructuyen\\v13\\edusync\\backend\\edusync\\models\\assignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|solutionrelative:models\\assignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|c:\\users\\kiman\\onedrive\\m\u00E1y t\u00EDnh\\elearning english\\hoctatructuyen\\v13\\edusync\\backend\\edusync\\models\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|solutionrelative:models\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|c:\\users\\kiman\\onedrive\\m\u00E1y t\u00EDnh\\elearning english\\hoctatructuyen\\v13\\edusync\\backend\\edusync\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|c:\\users\\kiman\\onedrive\\m\u00E1y t\u00EDnh\\elearning english\\hoctatructuyen\\v13\\edusync\\backend\\edusync\\controllers\\chatbotcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|c:\\users\\kiman\\onedrive\\m\u00E1y t\u00EDnh\\english\\backend\\edusync\\controllers\\chatbotcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|solutionrelative:controllers\\chatbotcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|c:\\users\\kiman\\onedrive\\m\u00E1y t\u00EDnh\\elearning english\\hoctatructuyen\\v13\\edusync\\backend\\edusync\\services\\rasaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|solutionrelative:services\\rasaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|c:\\users\\kiman\\onedrive\\m\u00E1y t\u00EDnh\\english\\backend\\edusync\\dtos\\chatbotdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|solutionrelative:dtos\\chatbotdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|c:\\users\\kiman\\onedrive\\m\u00E1y t\u00EDnh\\elearning english\\hoctatructuyen\\v13\\edusync\\backend\\edusync\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|solutionrelative:dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|c:\\users\\kiman\\onedrive\\m\u00E1y t\u00EDnh\\elearning english\\hoctatructuyen\\v13\\edusync\\backend\\edusync\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|c:\\users\\kiman\\onedrive\\m\u00E1y t\u00EDnh\\elearning english\\hoctatructuyen\\v13\\edusync\\backend\\edusync\\migrations\\20250407054024_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|solutionrelative:migrations\\20250407054024_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|c:\\users\\kiman\\onedrive\\m\u00E1y t\u00EDnh\\elearning english\\hoctatructuyen\\v13\\edusync\\backend\\edusync\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|c:\\users\\kiman\\onedrive\\m\u00E1y t\u00EDnh\\elearning english\\hoctatructuyen\\v13\\edusync\\backend\\edusync\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|c:\\users\\kiman\\onedrive\\m\u00E1y t\u00EDnh\\english\\backend\\edusync\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|c:\\users\\kiman\\onedrive\\m\u00E1y t\u00EDnh\\elearning english\\hoctatructuyen\\v13\\edusync\\backend\\edusync\\services\\statisticsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|solutionrelative:services\\statisticsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|c:\\users\\kiman\\onedrive\\m\u00E1y t\u00EDnh\\english\\backend\\edusync\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|c:\\users\\kiman\\onedrive\\m\u00E1y t\u00EDnh\\elearning english\\hoctatructuyen\\v13\\edusync\\backend\\edusync\\controllers\\examcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|solutionrelative:controllers\\examcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|c:\\users\\kiman\\onedrive\\m\u00E1y t\u00EDnh\\elearning english\\hoctatructuyen\\v13\\edusync\\backend\\edusync\\services\\examservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|solutionrelative:services\\examservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|c:\\users\\kiman\\onedrive\\m\u00E1y t\u00EDnh\\elearning english\\hoctatructuyen\\v13\\edusync\\backend\\edusync\\dtos\\examdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|solutionrelative:dtos\\examdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|c:\\users\\kiman\\onedrive\\m\u00E1y t\u00EDnh\\elearning english\\hoctatructuyen\\v13\\edusync\\backend\\edusync\\controllers\\lessoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|solutionrelative:controllers\\lessoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|c:\\users\\kiman\\onedrive\\m\u00E1y t\u00EDnh\\elearning english\\hoctatructuyen\\v13\\edusync\\backend\\edusync\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|solutionrelative:services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|c:\\users\\kiman\\onedrive\\m\u00E1y t\u00EDnh\\elearning english\\hoctatructuyen\\v13\\edusync\\backend\\edusync\\controllers\\statisticscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|solutionrelative:controllers\\statisticscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|c:\\users\\kiman\\onedrive\\m\u00E1y t\u00EDnh\\elearning english\\hoctatructuyen\\v13\\edusync\\backend\\edusync\\controllers\\resourcecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|solutionrelative:controllers\\resourcecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|c:\\users\\kiman\\onedrive\\m\u00E1y t\u00EDnh\\elearning english\\hoctatructuyen\\v13\\edusync\\backend\\edusync\\controllers\\discussioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|solutionrelative:controllers\\discussioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|c:\\users\\kiman\\onedrive\\m\u00E1y t\u00EDnh\\elearning english\\hoctatructuyen\\v13\\edusync\\backend\\edusync\\controllers\\classcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|solutionrelative:controllers\\classcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|c:\\users\\kiman\\onedrive\\m\u00E1y t\u00EDnh\\elearning english\\hoctatructuyen\\v13\\edusync\\backend\\edusync\\controllers\\assignmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|solutionrelative:controllers\\assignmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|c:\\users\\kiman\\onedrive\\m\u00E1y t\u00EDnh\\elearning english\\hoctatructuyen\\v13\\edusync\\backend\\edusync\\services\\assignmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|solutionrelative:services\\assignmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|c:\\users\\kiman\\onedrive\\m\u00E1y t\u00EDnh\\elearning english\\hoctatructuyen\\v13\\edusync\\backend\\edusync\\services\\lessonservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|solutionrelative:services\\lessonservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|c:\\users\\kiman\\onedrive\\m\u00E1y t\u00EDnh\\elearning english\\hoctatructuyen\\v13\\edusync\\backend\\edusync\\services\\classservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|solutionrelative:services\\classservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|c:\\users\\kiman\\onedrive\\m\u00E1y t\u00EDnh\\english\\backend\\edusync\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -158,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -174,451 +50,81 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAQwB0AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "ChatbotDTO.cs",
+              "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\English\\backend\\EduSync\\DTOs\\ChatbotDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\ChatbotDTO.cs",
+              "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\English\\backend\\EduSync\\DTOs\\ChatbotDTO.cs",
+              "RelativeToolTip": "DTOs\\ChatbotDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T12:54:53.617Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Models\\User.cs",
-              "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Models\\User.cs",
-              "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T14:52:58.367Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Exam.cs",
-              "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Models\\Exam.cs",
-              "RelativeDocumentMoniker": "Models\\Exam.cs",
-              "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Models\\Exam.cs",
-              "RelativeToolTip": "Models\\Exam.cs",
-              "ViewState": "AgIAAHwAAAAAAAAAAAAowJIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T02:17:39.831Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "NotificationController.cs",
-              "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Controllers\\NotificationController.cs",
-              "RelativeDocumentMoniker": "Controllers\\NotificationController.cs",
-              "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Controllers\\NotificationController.cs",
-              "RelativeToolTip": "Controllers\\NotificationController.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAgwE8AAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T12:29:32.502Z",
+              "WhenOpened": "2025-04-20T05:49:33.73Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAyAAAAAAAAAA==",
+              "Title": "ChatbotController.cs",
+              "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\English\\backend\\EduSync\\Controllers\\ChatbotController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ChatbotController.cs",
+              "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\English\\backend\\EduSync\\Controllers\\ChatbotController.cs",
+              "RelativeToolTip": "Controllers\\ChatbotController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T12:28:44.736Z",
+              "WhenOpened": "2025-04-20T05:46:59.306Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "Services\\AuthService.cs",
-              "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Services\\AuthService.cs",
-              "RelativeToolTip": "Services\\AuthService.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAmwHEAAAAAAAAAAAAAAA==",
+              "Title": "ChatGPTService.cs",
+              "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\English\\backend\\EduSync\\Services\\ChatGPTService.cs",
+              "RelativeDocumentMoniker": "Services\\ChatGPTService.cs",
+              "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\English\\backend\\EduSync\\Services\\ChatGPTService.cs",
+              "RelativeToolTip": "Services\\ChatGPTService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T05:34:04.612Z",
+              "WhenOpened": "2025-04-20T05:42:03.276Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AuthDtos.cs",
-              "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\DTOs\\AuthDtos.cs",
-              "RelativeDocumentMoniker": "DTOs\\AuthDtos.cs",
-              "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\DTOs\\AuthDtos.cs",
-              "RelativeToolTip": "DTOs\\AuthDtos.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAiwD8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T20:27:44.542Z",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\English\\backend\\EduSync\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\English\\backend\\EduSync\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-20T05:39:52.796Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Resource.cs",
-              "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Models\\Resource.cs",
-              "RelativeDocumentMoniker": "Models\\Resource.cs",
-              "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Models\\Resource.cs",
-              "RelativeToolTip": "Models\\Resource.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAQwCAAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T05:06:43.496Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Notification.cs",
-              "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Models\\Notification.cs",
-              "RelativeDocumentMoniker": "Models\\Notification.cs",
-              "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Models\\Notification.cs",
-              "RelativeToolTip": "Models\\Notification.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T05:09:09.506Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Discussion.cs",
-              "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Models\\Discussion.cs",
-              "RelativeDocumentMoniker": "Models\\Discussion.cs",
-              "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Models\\Discussion.cs",
-              "RelativeToolTip": "Models\\Discussion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T07:31:22.901Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Attendance.cs",
-              "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Models\\Attendance.cs",
-              "RelativeDocumentMoniker": "Models\\Attendance.cs",
-              "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Models\\Attendance.cs",
-              "RelativeToolTip": "Models\\Attendance.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T06:10:29.44Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Lesson.cs",
-              "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Models\\Lesson.cs",
-              "RelativeDocumentMoniker": "Models\\Lesson.cs",
-              "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Models\\Lesson.cs",
-              "RelativeToolTip": "Models\\Lesson.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAA5wCQAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T05:48:27.507Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AssignmentSubmission.cs",
-              "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Models\\AssignmentSubmission.cs",
-              "RelativeDocumentMoniker": "Models\\AssignmentSubmission.cs",
-              "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Models\\AssignmentSubmission.cs",
-              "RelativeToolTip": "Models\\AssignmentSubmission.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T07:21:50.075Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Assignment.cs",
-              "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Models\\Assignment.cs",
-              "RelativeDocumentMoniker": "Models\\Assignment.cs",
-              "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Models\\Assignment.cs",
-              "RelativeToolTip": "Models\\Assignment.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T05:52:37.325Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Class.cs",
-              "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Models\\Class.cs",
-              "RelativeDocumentMoniker": "Models\\Class.cs",
-              "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Models\\Class.cs",
-              "RelativeToolTip": "Models\\Class.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T05:11:58.498Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "RasaService.cs",
-              "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Services\\RasaService.cs",
-              "RelativeDocumentMoniker": "Services\\RasaService.cs",
-              "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Services\\RasaService.cs",
-              "RelativeToolTip": "Services\\RasaService.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAowEcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T15:28:23.268Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ChatbotController.cs",
-              "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Controllers\\ChatbotController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ChatbotController.cs",
-              "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Controllers\\ChatbotController.cs",
-              "RelativeToolTip": "Controllers\\ChatbotController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwB4AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T15:31:34.141Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "DiscussionController.cs",
-              "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Controllers\\DiscussionController.cs",
-              "RelativeDocumentMoniker": "Controllers\\DiscussionController.cs",
-              "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Controllers\\DiscussionController.cs",
-              "RelativeToolTip": "Controllers\\DiscussionController.cs",
-              "ViewState": "AgIAAH0AAAAAAAAAAAAAwIsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T12:29:14.712Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "ClassController.cs",
-              "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Controllers\\ClassController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ClassController.cs",
-              "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Controllers\\ClassController.cs",
-              "RelativeToolTip": "Controllers\\ClassController.cs",
-              "ViewState": "AgIAAG4AAAAAAAAAAAAuwH4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T12:29:00.802Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\English\\backend\\EduSync\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Program.cs",
+              "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\English\\backend\\EduSync\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T05:00:04.33Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "20250407054024_Initial.cs",
-              "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Migrations\\20250407054024_Initial.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250407054024_Initial.cs",
-              "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Migrations\\20250407054024_Initial.cs",
-              "RelativeToolTip": "Migrations\\20250407054024_Initial.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T05:40:24.886Z"
+              "WhenOpened": "2025-04-20T05:39:50.134Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "StatisticsService.cs",
-              "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Services\\StatisticsService.cs",
-              "RelativeDocumentMoniker": "Services\\StatisticsService.cs",
-              "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Services\\StatisticsService.cs",
-              "RelativeToolTip": "Services\\StatisticsService.cs",
-              "ViewState": "AgIAAFoBAAAAAAAAAAArwGkBAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T13:00:42.465Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "Controllers\\UsersController.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAiwH0AAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T20:36:20.405Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "UserDTO.cs",
-              "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\DTOs\\UserDTO.cs",
-              "RelativeDocumentMoniker": "DTOs\\UserDTO.cs",
-              "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\DTOs\\UserDTO.cs",
-              "RelativeToolTip": "DTOs\\UserDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T20:48:42.712Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "LessonController.cs",
-              "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Controllers\\LessonController.cs",
-              "RelativeDocumentMoniker": "Controllers\\LessonController.cs",
-              "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Controllers\\LessonController.cs",
-              "RelativeToolTip": "Controllers\\LessonController.cs",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAmwG0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T12:29:20.757Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 5,
               "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Properties\\launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\English\\backend\\EduSync\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\English\\backend\\EduSync\\Properties\\launchSettings.json",
               "RelativeToolTip": "Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-07T05:39:46.419Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-14T04:49:44.585Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "ExamController.cs",
-              "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Controllers\\ExamController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ExamController.cs",
-              "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Controllers\\ExamController.cs",
-              "RelativeToolTip": "Controllers\\ExamController.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAjwEYAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T12:07:26.229Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "ExamDto.cs",
-              "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\DTOs\\ExamDto.cs",
-              "RelativeDocumentMoniker": "DTOs\\ExamDto.cs",
-              "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\DTOs\\ExamDto.cs",
-              "RelativeToolTip": "DTOs\\ExamDto.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAIA6wDkAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T12:07:32.573Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "ExamService.cs",
-              "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Services\\ExamService.cs",
-              "RelativeDocumentMoniker": "Services\\ExamService.cs",
-              "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Services\\ExamService.cs",
-              "RelativeToolTip": "Services\\ExamService.cs",
-              "ViewState": "AgIAAGwAAAAAAAAAAAArwIMAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T06:25:17.654Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "AssignmentController.cs",
-              "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Controllers\\AssignmentController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AssignmentController.cs",
-              "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Controllers\\AssignmentController.cs",
-              "RelativeToolTip": "Controllers\\AssignmentController.cs",
-              "ViewState": "AgIAAGsAAAAAAAAAAAAuwHwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T12:28:45.018Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "NotificationService.cs",
-              "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Services\\NotificationService.cs",
-              "RelativeDocumentMoniker": "Services\\NotificationService.cs",
-              "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Services\\NotificationService.cs",
-              "RelativeToolTip": "Services\\NotificationService.cs",
-              "ViewState": "AgIAAFMAAAAAAAAAAAAswFMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T05:46:42.815Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "ResourceController.cs",
-              "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Controllers\\ResourceController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ResourceController.cs",
-              "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Controllers\\ResourceController.cs",
-              "RelativeToolTip": "Controllers\\ResourceController.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAmwF4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T12:29:40.355Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "StatisticsController.cs",
-              "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Controllers\\StatisticsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\StatisticsController.cs",
-              "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Controllers\\StatisticsController.cs",
-              "RelativeToolTip": "Controllers\\StatisticsController.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAmwFsAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T12:29:48.626Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "AssignmentService.cs",
-              "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Services\\AssignmentService.cs",
-              "RelativeDocumentMoniker": "Services\\AssignmentService.cs",
-              "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Services\\AssignmentService.cs",
-              "RelativeToolTip": "Services\\AssignmentService.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAA3wBUAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T05:51:45.078Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "LessonService.cs",
-              "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Services\\LessonService.cs",
-              "RelativeDocumentMoniker": "Services\\LessonService.cs",
-              "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Services\\LessonService.cs",
-              "RelativeToolTip": "Services\\LessonService.cs",
-              "ViewState": "AgIAAJwAAAAAAAAAAADwv64AAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T05:51:43.401Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "ClassService.cs",
-              "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Services\\ClassService.cs",
-              "RelativeDocumentMoniker": "Services\\ClassService.cs",
-              "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\Services\\ClassService.cs",
-              "RelativeToolTip": "Services\\ClassService.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAADwvy8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T05:22:37.654Z"
+              "WhenOpened": "2025-04-07T05:39:46.419Z",
+              "EditorCaption": ""
             }
           ]
         }

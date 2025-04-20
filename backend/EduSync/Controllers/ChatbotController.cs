@@ -1,4 +1,5 @@
-﻿using EduSync.Services;
+﻿using EduSync.DTOs;
+using EduSync.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -6,27 +7,23 @@ namespace EduSync.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+
     public class ChatbotController : ControllerBase
     {
-        private readonly RasaService _rasaService;
+        private readonly ChatGPTService _chatGptService;
 
-        public ChatbotController(RasaService rasaService)
+        public ChatbotController(ChatGPTService chatGptService)
         {
-            _rasaService = rasaService;
+            _chatGptService = chatGptService;
         }
-        [HttpPost("send-message")]
-        public async Task<IActionResult> SendMessage([FromBody] MessageRequest request)
-        {
-            if (string.IsNullOrEmpty(request?.Message))
-                return BadRequest("Message cannot be empty!");
 
-            var response = await _rasaService.SendMessageAsync(request.Message);
-            return Ok(response);
+        [HttpPost("chat")]
+        public async Task<IActionResult> ChatWithAssistant([FromBody] ChatbotDTO request)
+        {
+            var answer = await _chatGptService.GetAssistantResponseAsync(request.Question);
+            return Ok(new { answer });
         }
     }
 
-    public class MessageRequest
-    {
-        public string Message { get; set; }
-    }
+   
 }

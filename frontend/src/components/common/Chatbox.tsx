@@ -11,10 +11,10 @@ const Chatbox: React.FC = () => {
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState<string>('');
   const [isOpen, setIsOpen] = useState(false);
-  const [isMinimized, setIsMinimized] = useState(false);
+  const [isMinimized, setIsMinimized] = useState(true);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
-  // cuộn xuống dưới khi tin nhắn thay đổiđổi
+  // Cuộn xuống dưới khi tin nhắn thay đổi
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages]);
@@ -33,21 +33,20 @@ const Chatbox: React.FC = () => {
     setInput('');
 
     try {
-      const response = await fetch("http://localhost:5005/webhooks/rest/webhook", {
+      const response = await fetch("http://localhost:5071/api/Chatbot/chat", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ sender: "user", message: input }),
-        mode: "cors",
+        body: JSON.stringify({ question: input }),
       });
 
       const data = await response.json();
-      if (data.length > 0) {
+      if (data.answer) {
         const botResponse: Message = {
           id: `msg-${Date.now()}`,
           sender: 'bot',
-          text: data[0].text,
+          text: data.answer,
           timestamp: new Date()
         };
         
@@ -77,7 +76,6 @@ const Chatbox: React.FC = () => {
     return date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
   };
 
-  // Hiển thị các kích thước khác nhau dựa trên trạng thái
   const containerClasses = `
     fixed right-4 bottom-4 z-50 transition-all duration-300 ease-in-out
     ${isMinimized 
@@ -94,72 +92,66 @@ const Chatbox: React.FC = () => {
   return (
     <div 
       className={containerClasses}
-      style={{ 
-        // đđảm bảo hộp trò chuyện vẫn hiển thị khi cuộn
-        position: 'fixed',
-        right: '1rem',
-        bottom: '1rem'
-      }}
+      style={{ position: 'fixed', right: '1rem', bottom: '1rem' }}
     >
-      {/* nút bấm cho tiêu đềđề  */}
       {isMinimized ? (
-  <button
-    onClick={() => {
-      setIsMinimized(false);
-      setIsOpen(true);
-    }}
-    className="w-full h-full flex items-center justify-center bg-blue-500"
-  >
-    <img 
-      src="https://cdn-icons-png.freepik.com/512/8943/8943377.png"
-      alt="Chat Icon"
-      className="w-10 h-10 object-contain"
-    />
-  </button>
-) : (
-  <div 
-    onClick={() => setIsOpen(!isOpen)}
-    className="bg-blue-500 text-white p-2 flex items-center justify-between cursor-pointer h-12"
-  >
-    <span>AI Assistant</span>
-    <div className="flex items-center space-x-2">
-      <button 
-        onClick={(e) => {
-          e.stopPropagation();
-          setIsMinimized(true);
-          setIsOpen(false);
-        }}
-        className="hover:bg-blue-600 p-1 rounded"
-      >
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3" />
-        </svg>
-      </button>
-      <button 
-        onClick={(e) => {
-          e.stopPropagation();
-          setIsOpen(false);
-        }}
-        className="hover:bg-blue-600 p-1 rounded"
-      >
-        ×
-      </button>
-    </div>
-  </div>
-)}
+        <button
+          onClick={() => {
+            setIsMinimized(false);
+            setIsOpen(true);
+          }}
+          className="w-full h-full flex items-center justify-center bg-blue-500"
+        >
+          <img 
+            src="https://cdn-icons-png.freepik.com/512/8943/8943377.png"
+            alt="Chat Icon"
+            className="w-10 h-10 object-contain"
+          />
+        </button>
+      ) : (
+        <div 
+          onClick={() => setIsOpen(!isOpen)}
+          className="bg-blue-500 text-white p-2 flex items-center justify-between cursor-pointer h-12"
+        >
+          <span>AI Assistant</span>
+          <div className="flex items-center space-x-2">
+            <button 
+              onClick={(e) => {
+                e.stopPropagation();
+                setIsMinimized(true);
+                setIsOpen(false);
+              }}
+              className="hover:bg-blue-600 p-1 rounded"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3" />
+              </svg>
+            </button>
+            <button 
+              onClick={(e) => {
+                e.stopPropagation();
+                setIsOpen(false);
+              }}
+              className="hover:bg-blue-600 p-1 rounded"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" 
+                stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
 
-        
+            </button>
+          </div>
+        </div>
+      )}
 
-      {/* hiển thị khi ko thu nhỏ và mở */}
       {!isMinimized && isOpen && (
         <>
           <div className="flex-1 overflow-y-auto p-4 space-y-3 bg-gray-50 h-[calc(100%-8rem)]">
             {messages.map((msg) => (
               <div 
                 key={msg.id} 
-                className={`flex items-start space-x-2 ${
-                  msg.sender === 'user' ? 'justify-end' : 'justify-start'
-                }`}
+                className={`flex items-start space-x-2 ${msg.sender === 'user' ? 'justify-end' : 'justify-start'}`}
               >
                 {msg.sender === 'bot' && (
                   <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-blue-500 mt-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -170,13 +162,7 @@ const Chatbox: React.FC = () => {
                   </svg>
                 )}
                 <div 
-                  className={`
-                    max-w-[70%] p-2 rounded-lg 
-                    ${msg.sender === 'user' 
-                      ? 'bg-blue-500 text-white' 
-                      : 'bg-gray-200 text-gray-800'
-                    }
-                  `}
+                  className={`max-w-[70%] p-2 rounded-lg ${msg.sender === 'user' ? 'bg-blue-500 text-white' : 'bg-gray-200 text-gray-800'}`}
                 >
                   <p>{msg.text}</p>
                   <span className="text-xs opacity-70 block text-right mt-1">
@@ -194,7 +180,6 @@ const Chatbox: React.FC = () => {
             <div ref={messagesEndRef} />
           </div>
 
-          {/* phần nhập tin nhắn */}
           <div className="p-4 bg-white border-t border-gray-200 flex items-center space-x-2">
             <input 
               type="text"

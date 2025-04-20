@@ -41,7 +41,7 @@ namespace EduSync.Services
                 Questions = examDto.Questions.Select(q => new Question
                 {
                     Content = q.Content,
-                    Type = q.Type,
+                    Type =(QuestionType) q.Type,
                     Points = q.Points,
                     Options = q.Type == QuestionType.MultipleChoice
                         ? q.Options.Select(o => new Option
@@ -142,15 +142,32 @@ namespace EduSync.Services
                 ExamId = exam.Id,
                 StudentId = studentId,
                 SubmissionTime = DateTime.UtcNow,
-                Score = 0, // Will be calculated after grading
-                Answers = submissionDto.Answers.Select(a => new Answer
+                Answers = submissionDto.Answers.Select(a =>
                 {
-                    QuestionId = a.QuestionId,
-                    Content = a.Content,
-                    SelectedOptionId = a.SelectedOptionId,
-                    Score = 0 // Will be updated after grading
+                    var question = exam.Questions.FirstOrDefault(q => q.Id == a.QuestionId);
+
+                    double score = 0;
+                    if (question != null && question.Type == QuestionType.MultipleChoice)
+                    {
+                        var correctOption = question.Options.FirstOrDefault(o => o.Id == a.SelectedOptionId);
+                        if (correctOption != null && correctOption.IsCorrect)
+                        {
+                            score = question.Points;
+                        }
+                    }
+
+                    return new Answer
+                    {
+                        QuestionId = a.QuestionId,
+                        Content = a.Content,
+                        SelectedOptionId = a.SelectedOptionId,
+                        Score = score // Trắc nghiệm tính ngay, tự luận để 0
+                    };
                 }).ToList()
             };
+
+            // Tính tổng điểm của các câu đã tính
+            submission.Score = submission.Answers.Sum(a => a.Score);
 
             _context.ExamSubmissions.Add(submission);
             await _context.SaveChangesAsync();
@@ -180,6 +197,7 @@ namespace EduSync.Services
                 Feedback = s.Feedback,
                 Answers = s.Answers.Select(a => new SubmitAnswerDto
                 {
+                    AnswerId = a.Id,
                     QuestionId = a.QuestionId,
                     Content = a.Content,
                     SelectedOptionId = a.SelectedOptionId,

@@ -48,7 +48,6 @@ const Exams = () => {
   const [selectedSubmission, setSelectedSubmission] = useState(null);
   const [submissionGrades, setSubmissionGrades] = useState({});
   const [studentSubmission, setStudentSubmission] = useState(null);
-
   useEffect(() => {
     const init = async () => {
       try {
@@ -136,16 +135,21 @@ const Exams = () => {
         ClassId: selectedClass.id,
         Questions: createExamData.questions.map(q => ({
           Content: q.content,
-          Type: q.type === 'MultipleChoice' ? 0 : 1,
+          Type: q.type,
           Points: q.points,
-          Options: q.options.map(o => ({
-            Content: o.content,
-            IsCorrect: o.isCorrect
-          }))
+          Options: q.type === 0
+            ? q.options.map(o => ({
+                Content: o.content,
+                IsCorrect: o.isCorrect
+              }))
+            : [] 
         }))
+                        
       };
-      
+
       await examService.create(examData);
+      console.log('Exam data to submit:', examData);
+
       enqueueSnackbar('Tạo bài kiểm tra thành công', { variant: 'success' });
       setIsCreateModalOpen(false);
       setCreateExamData({
@@ -165,30 +169,37 @@ const Exams = () => {
       enqueueSnackbar('Không thể tạo bài kiểm tra', { variant: 'error' });
     }
   };
-
   const handleAddQuestion = () => {
-    console.log('Adding question:', currentQuestion);
     if (!currentQuestion.content) {
       enqueueSnackbar('Vui lòng nhập nội dung câu hỏi', { variant: 'error' });
       return;
     }
-
-    if (currentQuestion.type === 'MultipleChoice') {
+  
+    const questionType = currentQuestion.type === 'MultipleChoice' ? 0 : 1;
+  
+    if (questionType === 0) {
       const hasCorrectAnswer = currentQuestion.options.some(opt => opt.isCorrect);
       if (!hasCorrectAnswer) {
         enqueueSnackbar('Vui lòng chọn ít nhất một đáp án đúng', { variant: 'error' });
         return;
       }
     }
-
+  
+    const questionToAdd = {
+      content: currentQuestion.content,
+      type: questionType,
+      points: currentQuestion.points,
+      options: questionType === 0 ? currentQuestion.options : []
+    };
+  
     setCreateExamData(prev => ({
       ...prev,
-      questions: [...prev.questions, currentQuestion]
+      questions: [...prev.questions, questionToAdd]
     }));
-
+  
     setCurrentQuestion({
       content: '',
-      type: 'MultipleChoice',
+      type: currentQuestion.type,
       points: 10,
       options: [
         { content: '', isCorrect: false },
@@ -198,7 +209,8 @@ const Exams = () => {
       ]
     });
   };
-
+   
+  
   const handleStartExam = async (examId) => {
     try {
       const exam = exams.find(exam => exam.id === examId);
@@ -256,7 +268,6 @@ const Exams = () => {
         examId: examId,
         answers: answers
       };
-
       console.log('Submit data:', submitData);
       await examService.submit(submitData);
       enqueueSnackbar('Nộp bài kiểm tra thành công', { variant: 'success' });
@@ -267,41 +278,104 @@ const Exams = () => {
       enqueueSnackbar('Không thể nộp bài kiểm tra: ' + error.message, { variant: 'error' });
     }
   };
-
-  const handleGradeChange = (submissionId, questionId, field, value) => {
-    setSubmissionGrades(prev => ({
-      ...prev,
-      [submissionId]: {
-        ...prev[submissionId],
-        [questionId]: {
-          ...prev[submissionId]?.[questionId],
-          [field]: value
-        }
-      }
-    }));
+  const [grading, setGrading] = useState(false);
+  const [feedback, setFeedback] = useState({});
+  const [manualScores, setManualScores] = useState({});
+  const [totalManualScore, setTotalManualScore] = useState(0);
+  
+ // Hàm để bắt đầu chấm điểm một bài nộp
+const handleStartGrading = (submission) => {
+  setSelectedSubmission(submission);
+  
+  // Khởi tạo feedback và manualScores từ các câu trả lời
+  const initialFeedback = {};
+  const initialScores = {};
+  
+  submission.answers.forEach(answer => {
+    initialFeedback[answer.questionId] = answer.feedback || '';
+    
+    // Với câu trắc nghiệm, điểm được tính tự động
+    const question = selectedExam.questions.find(q => q.id === answer.questionId);
+    if (question.type === 1) { // Essay question
+      initialScores[answer.questionId] = answer.score || 0; // Lấy điểm đã có hoặc mặc định 0
+    } else {
+      // Với câu trắc nghiệm, điểm đã được tính tự động trong backend
+      initialScores[answer.questionId] = answer.score || 0;
+    }
+  });
+  setFeedback(initialFeedback);
+  setManualScores(initialScores);
+  setGrading(true);
+  calculateTotalManualScore(initialScores);// tính tổng điểm hiện tại
+};
+  // Hàm để tính tổng điểm
+const calculateTotalManualScore = (scores) => {
+  if (!selectedSubmission) return;
+  
+  let total = 0;
+  selectedSubmission.answers.forEach(answer => {
+    const question = selectedExam.questions.find(q => q.id === answer.questionId);
+    if (question) {
+      total += scores[answer.questionId] || 0;
+    }
+  });
+  
+  setTotalManualScore(total);
+};
+ // Hàm để cập nhật điểm cho một câu hỏi
+const handleScoreChange = (questionId, score) => {
+  const question = selectedExam.questions.find(q => q.id === questionId);
+  const maxQuestionScore = question ? question.points : 0;
+  // Đảm bảo điểm hợp lệ
+  const validScore = Math.min(Math.max(0, parseFloat(score) || 0), maxQuestionScore);
+  const updatedScores = {
+    ...manualScores,
+    [questionId]: validScore
   };
+  
+  setManualScores(updatedScores);
+  calculateTotalManualScore(updatedScores);
+};
+// Hàm để cập nhật nhận xét cho một câu hỏi
+const handleFeedbackChange = (questionId, value) => {
+  setFeedback(prev => ({
+    ...prev,
+    [questionId]: value
+  }));
+};
+// Hàm để lưu điểm và nhận xét
+const handleSaveGrades = async () => {
+  try {
+    if (!selectedSubmission) return;
 
-  const handleUpdateSubmission = async (submissionId) => {
-    try {
-      const grades = Object.entries(submissionGrades[submissionId] || {}).map(([questionId, grade]) => ({
-        answerId: questionId,
-        score: grade.score || 0,
-        feedback: grade.feedback || ''
+    const essayGrades = selectedSubmission.answers
+      .filter(answer => {
+        const question = selectedExam.questions.find(q => q.id === answer.questionId);
+        return question && question.type == 1; // chỉ lấy câu tự luận
+      })
+      .map(answer => ({
+        answerId: answer.ans,
+        score: manualScores[answer.questionId] || 0,
+        feedback: feedback[answer.questionId] || ''
       }));
 
-      await examService.gradeSubmission(submissionId, grades);
-      enqueueSnackbar('Cập nhật điểm thành công', { variant: 'success' });
-      fetchSubmissions(selectedExam.id);
-      setSubmissionGrades(prev => {
-        const newGrades = { ...prev };
-        delete newGrades[submissionId];
-        return newGrades;
-      });
-    } catch (error) {
-      console.error('Error updating submission:', error);
-      enqueueSnackbar('Không thể cập nhật điểm', { variant: 'error' });
-    }
-  };
+    console.log('Grades being sent:', essayGrades);
+    console.log("Selected submission answers:", selectedSubmission.answers);
+
+    await examService.gradeSubmission(selectedSubmission.id, essayGrades);
+
+    enqueueSnackbar('Lưu điểm và nhận xét thành công', { variant: 'success' });
+    setGrading(false);
+    fetchSubmissions(selectedExam.id);
+  } catch (error) {
+    console.error('Grading error:', error);
+    enqueueSnackbar('Không thể lưu điểm và nhận xét: ' + (error.message || 'Lỗi không xác định'), {
+      variant: 'error'
+    });
+  }
+};
+
+
 
   const getStatusColor = (exam) => {
     const now = new Date();
@@ -675,8 +749,6 @@ const Exams = () => {
                             className="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm py-2.5 px-3 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-colors duration-200"
                             rows="2"
                           />
-                          
-
                           {/* Xem trước nội dung  */}
                           <div className="mt-3">
                             <label className="block text-sm font-medium text-gray-700 mb-1">
@@ -689,28 +761,7 @@ const Exams = () => {
                               }}    
                             />
                           </div>
-                         {/* 
-                          <UploadAudio
-                            currentQuestion={currentQuestion}
-                            setCurrentQuestion={setCurrentQuestion}
-                          />
-                          {currentQuestion.audioUrl && (
-  <div className="mt-2 flex items-center gap-2">
-    <button
-      onClick={() => {
-        const audio = document.getElementById("preview-audio");
-        if (audio) audio.play();
-      }}
-      className="text-indigo-600 hover:text-indigo-800"
-      title="Nghe audio"
-    >
-      🔊 Nghe audio
-    </button>
-    <audio id="preview-audio" src={currentQuestion.audioUrl} />
-  </div>
-)}
-
-                         */}
+                         
                         </div>
 
                             <div className="grid grid-cols-2 gap-4">
@@ -887,9 +938,9 @@ const Exams = () => {
                                           Câu {index + 1}
                                         </h4>
                                         <div
-  className="mt-1 text-sm text-gray-600 prose"
-  dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(question.content) }}
-/>
+                                          className="mt-1 text-sm text-gray-600 prose"
+                                          dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(question.content) }}
+                                        />
 
                                         {question.type === 0 ? (
                                           <div className="mt-4 space-y-2">
@@ -973,9 +1024,9 @@ const Exams = () => {
                                       Câu {index + 1}
                                     </h4>
                                     <div
-  className="mt-1 text-sm text-gray-600 prose"
-  dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(question.content) }}
-/>
+                                      className="mt-1 text-sm text-gray-600 prose"
+                                      dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(question.content) }}
+                                    />
                                     {question.type === 0 ? (
                                       <div className="mt-4 space-y-2">
                                         {question.options?.map((option) => (
@@ -1041,95 +1092,109 @@ const Exams = () => {
                                     </div>
                                     <div className="flex items-center space-x-2">
                                       <span className="text-sm font-medium text-gray-900">Tổng điểm:</span>
-                                      <span className="text-sm text-gray-600">{selectedSubmission.score || 0}/{selectedExam.totalPoints}</span>
+                                      <span className="text-sm text-gray-600">
+                                      {totalManualScore}/{selectedExam.totalPoints}
+                                      </span>
                                     </div>
                                   </div>
                                 </div>
 
                                 {selectedExam.questions.map((question, index) => {
-                                  const answer = selectedSubmission.answers.find(a => a.questionId === question.id);
-                                  const grade = submissionGrades[selectedSubmission.id]?.[question.id] || {};
-                                  const correctOption = question.options.find(o => o.isCorrect);
-                                  return (
-                                    <div key={question.id} className="bg-white rounded-lg shadow-sm p-4">
-                                      <div className="flex justify-between items-start">
-                                        <div className="flex-1">
-                                          <h4 className="text-base font-medium text-gray-900">
-                                            Câu {index + 1}
-                                          </h4>
-                                          <div
-  className="mt-1 text-sm text-gray-600 prose"
-  dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(question.content) }}
-/>
-                                          <div className="mt-4 space-y-2">
-                                            {question.options?.map((option) => (
-                                              <div
-                                                key={option.id}
-                                                className={`flex items-center space-x-3 p-2 rounded ${
-                                                  option.id === answer?.selectedOptionId
-                                                    ? option.isCorrect
-                                                      ? 'bg-green-50 border border-green-200'
-                                                      : 'bg-red-50 border border-red-200'
-                                                    : option.isCorrect
-                                                      ? 'bg-green-50 border border-green-200'
-                                                      : ''
-                                                }`}
-                                              >
-                                                <input
-                                                  type="radio"
-                                                  checked={option.id === answer?.selectedOptionId}
-                                                  disabled
-                                                  className={`h-4 w-4 ${
-                                                    option.isCorrect
-                                                      ? 'text-green-600 border-green-300'
-                                                      : option.id === answer?.selectedOptionId
-                                                      ? 'text-red-600 border-red-300'
-                                                      : 'text-gray-300 border-gray-300'
-                                                  }`}
-                                                />
-                                                <span className={`text-sm ${
-                                                  option.isCorrect
-                                                    ? 'text-green-700'
-                                                    : option.id === answer?.selectedOptionId
-                                                    ? 'text-red-700'
-                                                    : 'text-gray-700'
-                                                }`}>
-                                                  {option.content}
-                                                </span>
-                                                {option.isCorrect && (
-                                                  <span className="ml-2 text-xs font-medium text-green-700 bg-green-100 px-2 py-0.5 rounded">
-                                                    Đáp án đúng
-                                                  </span>
-                                                )}
-                                              </div>
-                                            ))}
-                                          </div>
-                                        </div>
-                                        <div className="ml-4">
-                                          <input
-                                            type="number"
-                                            className="w-20 rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-                                            placeholder="Điểm"
-                                            min="0"
-                                            max={question.points}
-                                            value={grade.score || answer?.score || ''}
-                                            onChange={(e) => handleGradeChange(selectedSubmission.id, question.id, 'score', parseInt(e.target.value) || 0)}
-                                          />
-                                          <p className="text-xs text-gray-500 mt-1">/{question.points} điểm</p>
-                                        </div>
-                                      </div>
-                                      <div className="mt-4">
-                                        <textarea
-                                          className="w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-                                          rows="2"
-                                          placeholder="Nhận xét..."
-                                          value={grade.feedback || answer?.feedback || ''}
-                                          onChange={(e) => handleGradeChange(selectedSubmission.id, question.id, 'feedback', e.target.value)}
-                                        />
-                                      </div>
-                                    </div>
-                                  );
-                                })}
+  const answer = selectedSubmission.answers.find(a => a.questionId === question.id);
+  if (!answer) return null;
+
+  const grade = submissionGrades[selectedSubmission.id]?.[answer.id] || {};
+  const correctOption = question.options.find(o => o.isCorrect);
+
+  return (
+    <div key={question.id} className="bg-white rounded-lg shadow-sm p-4 mb-4">
+      <div className="flex justify-between items-start">
+        <div className="flex-1">
+          <h4 className="text-base font-medium text-gray-900">Câu {index + 1}</h4>
+          <div
+            className="mt-1 text-sm text-gray-600 prose"
+            dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(question.content) }}
+          />
+  
+          {question.type === 0 && (
+            <div className="mt-4 space-y-2">
+              {question.options?.map((option) => (
+                <div
+                  key={option.id}
+                  className={`flex items-center space-x-3 p-2 rounded ${
+                    option.id === answer.selectedOptionId
+                      ? option.isCorrect
+                        ? 'bg-green-50 border border-green-200'
+                        : 'bg-red-50 border border-red-200'
+                      : option.isCorrect
+                      ? 'bg-green-50 border border-green-200'
+                      : ''
+                  }`}
+                >
+                  <input
+                    type="radio"
+                    checked={option.id === answer.selectedOptionId}
+                    disabled
+                    className="h-4 w-4"
+                  />
+                  <span className="text-sm">{option.content}</span>
+                  {option.isCorrect && (
+                    <span className="ml-2 text-xs font-medium text-green-700 bg-green-100 px-2 py-0.5 rounded">
+                    Đáp án đúng
+                  </span>
+                  )}
+                </div>
+              ))}
+            </div>
+          )}
+  
+          {question.type === 1 && (
+            <div className="mt-4">
+              <p className="text-sm text-gray-700 font-medium">Câu trả lời:</p>
+              <div className="p-2 bg-gray-50 border rounded text-sm text-gray-800 whitespace-pre-line">
+                {answer.content}
+              </div>
+            </div>
+          )}
+        </div>
+  
+        <div className="ml-4 min-w-[140px] text-sm">
+          {question.type === 1 ? (
+            <>
+              <label className="block text-sm font-medium text-gray-700">Chấm điểm</label>
+              <input
+                type="number"
+                min="0"
+                max={question.points}
+                value={manualScores[question.id] ?? ''}
+                onChange={(e) => handleScoreChange(question.id, e.target.value)}
+                className="mt-1 w-24 px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+              />
+              <p className="text-xs text-gray-500 mt-1">/{question.points}</p>
+            </>
+          ) : (
+            <p className="mt-2 text-sm text-gray-600">
+              Điểm: <strong>{answer.score}</strong> / {question.points}
+            </p>
+          )}
+        </div>
+      </div>
+  
+      <div className="mt-4">
+        <label className="block text-sm font-medium text-gray-700 mt-4">Nhận xét</label>
+        <textarea
+          rows={3}
+          value={feedback[question.id] ?? ''}
+          onChange={(e) => handleFeedbackChange(question.id, e.target.value)}
+          className="mt-1 w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+          placeholder="Viết nhận xét cho câu trả lời..."
+        />
+      </div>
+    </div>
+  );
+  
+})}
+
                               </div>
                             ) : (
                               <div className="h-full flex items-center justify-center">
@@ -1172,24 +1237,24 @@ const Exams = () => {
                                         </div>
                                         <div className="flex items-center space-x-2">
                                           <span className="text-sm font-medium text-gray-900">Điểm:</span>
-                                          <span className="text-sm text-gray-600">{submission.score || 0}/{selectedExam.totalPoints}</span>
+                                          <span className="text-sm text-gray-600">
+                                          {selectedExam.totalPoints}
+                                          </span>
                                         </div>
                                       </div>
                                     </li>
                                   ))}
                                 </ul>
                               </div>
-                              {selectedSubmission && (
-                                <div className="px-4 py-4 border-t border-gray-200">
-                                  <button
-                                    type="button"
-                                    onClick={() => handleUpdateSubmission(selectedSubmission.id)}
-                                    className="w-full inline-flex justify-center items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                                  >
-                                    Cập nhật điểm
-                                  </button>
-                                </div>
-                              )}
+                              <div className="flex justify-end mt-6">
+  <button
+    onClick={handleSaveGrades}
+    className="px-6 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition duration-150"
+  >
+    Lưu điểm và nhận xét
+  </button>
+</div>
+
                             </div>
                           </div>
                         </>

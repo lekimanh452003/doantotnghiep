@@ -4941,11 +4941,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kiman\\OneDrive\\Máy tính\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\EduSync.csproj",
+      "projectUniqueName": "C:\\Users\\kiman\\OneDrive\\Máy tính\\English\\backend\\EduSync\\EduSync.csproj",
       "projectName": "EduSync",
-      "projectPath": "C:\\Users\\kiman\\OneDrive\\Máy tính\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\EduSync.csproj",
+      "projectPath": "C:\\Users\\kiman\\OneDrive\\Máy tính\\English\\backend\\EduSync\\EduSync.csproj",
       "packagesPath": "C:\\Users\\kiman\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kiman\\OneDrive\\Máy tính\\Elearning English\\HocTATrucTuyen\\v13\\EduSync\\backend\\EduSync\\obj\\",
+      "outputPath": "C:\\Users\\kiman\\OneDrive\\Máy tính\\English\\backend\\EduSync\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
