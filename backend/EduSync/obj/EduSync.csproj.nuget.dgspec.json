@@ -62,6 +62,10 @@
               "target": "Package",
               "version": "[9.0.2, )"
             },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.3, )"
@@ -75,6 +79,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.3, )"
+            },
+            "Microsoft.Identity.Client": {
+              "target": "Package",
+              "version": "[4.71.1, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
