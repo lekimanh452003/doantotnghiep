@@ -4,16 +4,14 @@
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /src
 
-# Copy solution and project files
-COPY ../*.sln .                
-COPY *.csproj ./               
-# Restore dependencies
-RUN dotnet restore
+# Copy project file
+COPY SyncEdu/SyncEdu.csproj ./SyncEdu/
+RUN dotnet restore ./SyncEdu/SyncEdu.csproj
 
-# Copy the rest of the code
-COPY . .                        
+# Copy entire source
+COPY . .
 
-WORKDIR /src
+WORKDIR /src/SyncEdu
 
 # Build and publish
 RUN dotnet publish -c Release -o /app/publish
@@ -24,16 +22,12 @@ RUN dotnet publish -c Release -o /app/publish
 FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS final
 WORKDIR /app
 
-# Copy build artifacts
 COPY --from=build /app/publish .
 
-# Expose ports (optional)
 EXPOSE 5071
 EXPOSE 7104
 
-# Set environment variables
 ENV ASPNETCORE_URLS="http://+:5071;https://+:7104"
 ENV ASPNETCORE_ENVIRONMENT=Production
 
-# Run the app
-ENTRYPOINT ["dotnet", "EduSync.dll"]
+ENTRYPOINT ["dotnet", "SyncEdu.dll"]
