@@ -45,7 +45,7 @@ export const dictionaryService = {
         },
         {
           headers: {
-            'Authorization': `Bearer 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`,
+            'Authorization': `Bearer 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`,
             'Content-Type': 'application/json'
           }
         }

@@ -7,12 +7,8 @@
       "RelativeMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|c:\\users\\kiman\\onedrive\\m\u00E1y t\u00EDnh\\english\\backend\\edusync\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|solutionrelative:services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|c:\\users\\kiman\\onedrive\\m\u00E1y t\u00EDnh\\english\\backend\\edusync\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|c:\\users\\kiman\\onedrive\\m\u00E1y t\u00EDnh\\english\\backend\\edusync\\controllers\\dictionarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|solutionrelative:controllers\\dictionarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|c:\\users\\kiman\\onedrive\\m\u00E1y t\u00EDnh\\english\\backend\\edusync\\services\\chatgptservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,16 +19,8 @@
       "RelativeMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|solutionrelative:controllers\\chatbotcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|c:\\users\\kiman\\onedrive\\m\u00E1y t\u00EDnh\\english\\backend\\edusync\\dtos\\chatbotdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|solutionrelative:dtos\\chatbotdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|c:\\users\\kiman\\onedrive\\m\u00E1y t\u00EDnh\\english\\backend\\edusync\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|c:\\users\\kiman\\onedrive\\m\u00E1y t\u00EDnh\\english\\backend\\edusync\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A1AB6437-62E4-DC9E-EDE0-580B77DF5675}|EduSync.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,67 +30,68 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 7,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\English\\backend\\EduSync\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "Services\\UserService.cs",
-              "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\English\\backend\\EduSync\\Services\\UserService.cs",
-              "RelativeToolTip": "Services\\UserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Title": "DictionaryController.cs",
+              "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\English\\backend\\EduSync\\Controllers\\DictionaryController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DictionaryController.cs",
+              "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\English\\backend\\EduSync\\Controllers\\DictionaryController.cs",
+              "RelativeToolTip": "Controllers\\DictionaryController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwCAAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T09:24:18.008Z"
+              "WhenOpened": "2025-05-05T20:27:37.609Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\English\\backend\\EduSync\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\English\\backend\\EduSync\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "Controllers\\UsersController.cs",
-              "ViewState": "AgIAAFMAAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T09:24:01.994Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ChatbotDTO.cs",
-              "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\English\\backend\\EduSync\\DTOs\\ChatbotDTO.cs",
-              "RelativeDocumentMoniker": "DTOs\\ChatbotDTO.cs",
-              "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\English\\backend\\EduSync\\DTOs\\ChatbotDTO.cs",
-              "RelativeToolTip": "DTOs\\ChatbotDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T05:49:33.73Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ChatbotController.cs",
-              "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\English\\backend\\EduSync\\Controllers\\ChatbotController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ChatbotController.cs",
-              "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\English\\backend\\EduSync\\Controllers\\ChatbotController.cs",
-              "RelativeToolTip": "Controllers\\ChatbotController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T05:46:59.306Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "ChatGPTService.cs",
               "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\English\\backend\\EduSync\\Services\\ChatGPTService.cs",
               "RelativeDocumentMoniker": "Services\\ChatGPTService.cs",
               "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\English\\backend\\EduSync\\Services\\ChatGPTService.cs",
               "RelativeToolTip": "Services\\ChatGPTService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAA7wBwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T05:42:03.276Z"
+              "WhenOpened": "2025-05-05T16:18:30.418Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ChatbotController.cs",
+              "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\English\\backend\\EduSync\\Controllers\\ChatbotController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ChatbotController.cs",
+              "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\English\\backend\\EduSync\\Controllers\\ChatbotController.cs",
+              "RelativeToolTip": "Controllers\\ChatbotController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAADgvxkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T16:25:31.301Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\English\\backend\\EduSync\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\English\\backend\\EduSync\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T16:25:00.637Z"
             },
             {
               "$type": "Document",
@@ -112,34 +101,10 @@
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\English\\backend\\EduSync\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-04-20T05:39:52.796Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\English\\backend\\EduSync\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\English\\backend\\EduSync\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T05:39:50.134Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\English\\backend\\EduSync\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\kiman\\OneDrive\\M\u00E1y t\u00EDnh\\English\\backend\\EduSync\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-07T05:39:46.419Z"
             }
           ]
         }

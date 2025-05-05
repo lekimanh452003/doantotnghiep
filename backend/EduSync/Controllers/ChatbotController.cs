@@ -20,7 +20,7 @@ namespace EduSync.Controllers
         [HttpPost("chat")]
         public async Task<IActionResult> ChatWithAssistant([FromBody] ChatbotDTO request)
         {
-            var answer = await _chatGptService.GetAssistantResponseAsync(request.Question);
+            var answer = await _chatGptService.GetChatResponseAsync(request.Question);
             return Ok(new { answer });
         }
     }
