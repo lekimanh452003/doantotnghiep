@@ -42,20 +42,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -66,8 +54,7 @@
               "RelativeToolTip": "Services\\UserService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T09:24:18.008Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-29T09:24:18.008Z"
             },
             {
               "$type": "Document",
@@ -79,8 +66,7 @@
               "RelativeToolTip": "Controllers\\UsersController.cs",
               "ViewState": "AgIAAFMAAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T09:24:01.994Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-29T09:24:01.994Z"
             },
             {
               "$type": "Document",
@@ -92,8 +78,7 @@
               "RelativeToolTip": "DTOs\\ChatbotDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T05:49:33.73Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-20T05:49:33.73Z"
             },
             {
               "$type": "Document",
@@ -105,8 +90,7 @@
               "RelativeToolTip": "Controllers\\ChatbotController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T05:46:59.306Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-20T05:46:59.306Z"
             },
             {
               "$type": "Document",
@@ -118,8 +102,7 @@
               "RelativeToolTip": "Services\\ChatGPTService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAGsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T05:42:03.276Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-20T05:42:03.276Z"
             },
             {
               "$type": "Document",
@@ -144,8 +127,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T05:39:50.134Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-20T05:39:50.134Z"
             },
             {
               "$type": "Document",
@@ -157,8 +139,7 @@
               "RelativeToolTip": "Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-07T05:39:46.419Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-07T05:39:46.419Z"
             }
           ]
         }
